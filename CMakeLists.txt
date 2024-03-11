@@ -155,11 +155,11 @@ if (NOT MSVC)
 	endif(FORTRAN)
     endif()
 
-    if (DEBUG)
-        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0 -g")
-    else()
-        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3")
-    endif()
+    # if (DEBUG)
+    #     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0 -g")
+    # else()
+    #     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3")
+    # endif()
 
     set(CMAKE_C_STANDARD_LIBRARIES "${CMAKE_C_STANDARD_LIBRARIES} -lm")      # Include math
     # Include real time library in linux
